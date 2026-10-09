@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380">
+  <style>
+    .bg { fill: #1e1e2e; }
+    .bar { fill: #313244; }
+    .dot-r { fill: #f38ba8; }
+    .dot-y { fill: #f9e2af; }
+    .dot-g { fill: #a6e3a1; }
+    .t { font-family: 'Menlo', 'Cascadia Code', monospace; fill: #cdd6f4; font-size: 13px; }
+    .dim { fill: #6c7086; }
+    .green { fill: #a6e3a1; }
+    .yellow { fill: #f9e2af; }
+    .blue { fill: #89b4fa; }
+    .red { fill: #f38ba8; }
+    .b { font-weight: 700; }
+  </style>
+  <rect class="bg" width="720" height="380" rx="10"/>
+  <rect class="bar" width="720" height="32" rx="10 10 0 0"/>
+  <circle class="dot-r" cx="18" cy="16" r="5.5"/>
+  <circle class="dot-y" cx="36" cy="16" r="5.5"/>
+  <circle class="dot-g" cx="54" cy="16" r="5.5"/>
+  <text class="t dim" x="360" y="20" text-anchor="middle" font-size="12">检测你的中转站</text>
+
+  <text class="t dim" x="18" y="58">❯</text>
+  <text class="t green" x="34" y="58">npx relay-radar monitor</text>
+
+  <text class="t yellow b" x="18" y="86">🔬 被动行为指纹验证</text>
+  <text class="t dim" x="18" y="106">  发送正常编程请求，分析响应特征...</text>
+
+  <text class="t" x="18" y="134">  📦 画像来源: <tspan class="green">🌐 远程最新</tspan></text>
+  <text class="t" x="18" y="158">  [1/20] 分析响应中...  <tspan class="dim">收集数据</tspan></text>
+  <text class="t" x="18" y="178">  [5/20] 初步结果:      <tspan class="blue">可能是 claude-opus-4</tspan></text>
+  <text class="t" x="18" y="198">  [10/20] 置信度提升:   <tspan class="yellow">72%</tspan></text>
+  <text class="t" x="18" y="218">  [15/20] 置信度提升:   <tspan class="green">89%</tspan></text>
+  <text class="t" x="18" y="238">  [20/20] 最终结果:     <tspan class="green b">95%</tspan></text>
+
+  <text class="t" x="18" y="270">  ┌──────────────────────────────────────┐</text>
+  <text class="t" x="18" y="290">  │ <tspan class="green b">✅ 模型验证通过</tspan>                       │</text>
+  <text class="t" x="18" y="310">  │ 声称: claude-opus-4                 │</text>
+  <text class="t" x="18" y="330">  │ 检测: claude-opus-4 <tspan class="green">(置信度 95%)</tspan>   │</text>
+  <text class="t" x="18" y="350">  └──────────────────────────────────────┘</text>
+
+  <text class="t dim" x="18" y="374">  中转站全程无法检测到验证行为</text>
+</svg>
